@@ -3,10 +3,10 @@
 
     //######################| Config |####################################
 
-    $config['module']           = 'modulo';
-    $config['module_title']     = 'modulo';
+    $config['module']           = 'contato';
+    $config['module_title']     = 'Contato';
     $config['model']            = '';
-    $config['table']            = 'modulo';
+    $config['table']            = 'contato';
         
     $config['base']             = 'padrao';
     $config['index']            = 'padrao';

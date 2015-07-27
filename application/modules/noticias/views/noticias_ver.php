@@ -1,0 +1,1 @@
+<h1>noticia completa</h1>

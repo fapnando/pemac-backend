@@ -89,11 +89,11 @@ $route['video/(:any)']					= 'video/$1';
 
 //###########################| Ajax |################################
 
-$route['ajax/paginas/(:any)']								= 'paginas/index';
+/*$route['ajax/paginas/(:any)']								= 'paginas/index';
 $route['ajax/([a-zA-Z_-]+)/([a-zA-Z_-]+)/(:any)'] 			= '$1/$2/$3';
 $route['ajax/([a-zA-Z_-]+)/(:any)']                        	= '$1/index/$2';
 $route['ajax/(:any)']                        				= '$1';
-$route[':any']                              				= 'home';
+$route[':any']                              				= 'home';*/
 
 //###########################| Sistema |################################
 
