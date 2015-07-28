@@ -5,7 +5,7 @@ $active_record = TRUE;
 
 $db['local']['hostname'] = 'localhost';
 $db['local']['username'] = 'root';
-$db['local']['password'] = 'root';
+$db['local']['password'] = '';
 $db['local']['database'] = 'pemac';
 $db['local']['dbdriver'] = 'mysql';
 $db['local']['dbprefix'] = '';
