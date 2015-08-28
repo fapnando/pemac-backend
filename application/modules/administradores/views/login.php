@@ -62,7 +62,7 @@
     	<div class="container">
       		<form method="POST" class="form-signin" id="login">
 	        	<div align="center">
-	          		<img style="width: 140px;" src="<?php echo base_url(); ?>assets/img/admin/logo.png" />
+	          		<img style="width: 140px;" src="<?php echo base_url(); ?>assets/img/public/logo_pemac.png" />
 	        	</div>
 	        	<h2 class="form-signin-heading">Login</h2>
 		        <input type="text" class="input-block-level" id="user_email" placeholder="Email">

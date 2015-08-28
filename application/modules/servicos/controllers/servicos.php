@@ -14,7 +14,7 @@ class servicos extends CI_Controller {
     	foreach($this->data->servicos as &$servico){
     		$auxiliar = $this->crud->select_by_array('routes',array('id'=>$servico['id_route']));
     		if(count($auxiliar)>0){
-    			$servico['link'] = base_url().'servicos/ver/'.$auxiliar[0]['slug'];
+    			$servico['link'] = base_url().'servicos/'.$auxiliar[0]['slug'];
     		}
     	}        
         $this->load->view('servicos',$this->data);
@@ -27,6 +27,7 @@ class servicos extends CI_Controller {
 	    	$servico = $this->crud->select_by_array('servicos',array('id'=>$auxiliar[2]));
 	    	if(count($servico)>0){
 	    		if($servico[0]['modelo'] == 1){
+                    $this->data->servico = $servico[0];
 	    			$this->load->view('servicos_ver_um',$this->data);
 	    		}else if($servico[0]['modelo'] == 2){
 	    			$this->load->view('servicos_ver_dois',$this->data);

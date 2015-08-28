@@ -67,7 +67,7 @@
     $config['campos']['categoria']['hidden']                     = false;
     $config['campos']['categoria']['relate']['tabela']           = 'categorias';
     $config['campos']['categoria']['relate']['campo']            = 'titulo';
-    $config['campos']['categoria']['txt']                        = 'relate';
+    $config['campos']['categoria']['txt']                        = 'Categoria';
     $config['campos']['categoria']['required']                   = true;
     $config['campos']['categoria']['fk']                         = false;
     $config['campos']['categoria']['multiple']                   = false;

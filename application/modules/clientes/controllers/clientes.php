@@ -9,9 +9,16 @@ class clientes extends CI_Controller {
         $this->data = $this->base->startModule($this->config,'admin');     
     }
     
-    function index(){        
+    function index(){
+        $this->data->clientes = $this->crud->select_by_array('clientes',array('ativo'=>1));      
         $this->load->view($this->data->module,$this->data);
-    }    
+    } 
+
+    function getProjects(){
+    	$id = $this->input->post('cliente');
+    	$projetos = $this->crud->select_by_array('projetos',array('cliente'=>$id));
+    	echo json_encode($projetos);
+    }   
 }
 
 ?>

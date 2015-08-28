@@ -81,7 +81,7 @@
     	    <nav id="mp-menu" class="mp-menu">
     		    <div class="mp-level"> 
                     <div class="left" style="margin-top: 50px; margin-left: 30px;">
-                        <img style="width: 140px;" src="<?php echo base_url(); ?>assets/img/admin/logo.png" />
+                        <img style="width: 140px;" src="<?php echo base_url(); ?>assets/img/public/logo_pemac.png" />
                     </div>
                     <ul class="clear">
                         <h2 class="left icon icon-world" style="font-size: 14px;  margin-left: 20px;">Administração</h2>

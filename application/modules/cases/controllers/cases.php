@@ -14,7 +14,7 @@ class cases extends CI_Controller {
     	foreach($this->data->cases as &$case){
     		$auxiliar = $this->crud->select_by_array('routes',array('id'=>$case['id_route']));
     		if(count($auxiliar)>0){
-    			$case['link'] = base_url().'cases/ver/'.$auxiliar[0]['slug'];
+    			$case['link'] = base_url().'cases/'.$auxiliar[0]['slug'];
     		}
     	}        
         $this->load->view('cases',$this->data);

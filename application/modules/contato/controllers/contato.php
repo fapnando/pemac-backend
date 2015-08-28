@@ -37,10 +37,10 @@ class contato extends CI_Controller {
         $assunto = $this->input->post('assunto');
         $empresa = $this->input->post('empresa');
         
-        $this->email->from('REMETENTE');
-        $this->email->to('DESTINATARIO');
+        $this->email->from('fapnando@gmail.com');
+        $this->email->to('fapnando@gmail.com');
         
-        $this->email->subject('CONTATO NOVO SITE');
+        $this->email->Subject('CONTATO NOVO SITE');
         
         $msg  = "---------------------<br/>";
         $msg .= "CONTATO NOVO SITE<br/>";
@@ -58,11 +58,10 @@ class contato extends CI_Controller {
         $this->email->message($msg);
 
         $this->cadastrar_banco($nome,$email,$fone,$mensagem,$assunto,$empresa);
-	
-        if ( ! $this->email->send()){
+        if (!$this->email->send()){
             echo "false";
         }else{
-            echo "true";
+            echo 'true';
         }
     	
     }    

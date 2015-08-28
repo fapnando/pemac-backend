@@ -86,6 +86,9 @@ $route['galeria/(:any)']				= 'galeria/$1';
 $route['rotas/(:any)']					= 'rotas/$1';
 $route['upload/(:any)']					= 'upload/$1';
 $route['video/(:any)']					= 'video/$1';
+$route['noticias/(:any)']					= 'noticias/ver/$1';
+$route['servicos/(:any)']					= 'servicos/ver/$1';
+$route['cases/(:any)']					= 'cases/ver/$1';
 
 //###########################| Ajax |################################
 

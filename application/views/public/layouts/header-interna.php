@@ -14,7 +14,7 @@
     </head>
     
     <body>
-    <div class="modal fade" id="modal-contato">
+        <div class="modal fade" id="modal-contato">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body contentContact">          
@@ -54,22 +54,22 @@
                 <div class="collapse navbar-collapse" id="navbar-ex-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="home" class="menu-item"><i class="fa fa-fw fa-home"></i>Home</a>
+                            <a href="<?php echo base_url(); ?>"><i class="fa fa-fw fa-home"></i>Home</a>
                         </li>
                         <li>
-                            <a href="institucional"><i class="fa fa-fw fa-building"></i>Institucional</a>
+                            <a href="<?php echo base_url(); ?>institucional"><i class="fa fa-fw fa-building"></i>Institucional</a>
                         </li>
                         <li>
-                            <a href="servicos" class="menu-item"><i class="fa fa-fw fa-wrench"></i>Serviços</a>
+                            <a href="<?php echo base_url(); ?>servicos"><i class="fa fa-fw fa-wrench"></i>Serviços</a>
                         </li>
                         <li>
-                            <a href="cases" class="menu-item"><i class="fa fa-fw fa-suitcase"></i>Cases</a>
+                            <a href="<?php echo base_url(); ?>cases"><i class="fa fa-fw fa-suitcase"></i>Cases</a>
                         </li>
                         <li>
-                            <a href="noticias" class="menu-item"><i class="fa fa-fw fa-newspaper-o"></i>Notícias</a>
+                            <a href="<?php echo base_url(); ?>noticias"><i class="fa fa-fw fa-newspaper-o"></i>Notícias</a>
                         </li>
                         <li>
-                            <a href="clientes" class="menu-item"><i class="fa fa-fw fa-users"></i>Clientes</a>
+                            <a href="<?php echo base_url(); ?>clientes"><i class="fa fa-fw fa-users"></i>Clientes</a>
                         </li>
                         <li>
                             <a href="contato" class="menu-item"><i class="fa fa-fw fa-mobile-phone"></i>Contato</a>
@@ -92,24 +92,4 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <section class="block">
-            <div id="myCarousel" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="active item">
-                        <img src="https://ununsplash.imgix.net/photo-1423753623104-718aaace6772?w=1024&amp;q=50&amp;fm=jpg&amp;s=1ffa61419561b5c796bca3158e7c704c"
-                        alt="Slide1">
-                    </div>
-                    <div class="item">
-                        <img src="https://ununsplash.imgix.net/photo-1423753623104-718aaace6772?w=1024&amp;q=50&amp;fm=jpg&amp;s=1ffa61419561b5c796bca3158e7c704c"
-                        alt="Slide2">
-                    </div>
-                    <div class="item">
-                        <img src="https://ununsplash.imgix.net/photo-1423753623104-718aaace6772?w=1024&amp;q=50&amp;fm=jpg&amp;s=1ffa61419561b5c796bca3158e7c704c"
-                        alt="Slide2">
-                    </div>
-                </div>
-                <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
-                <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
-            </div>
-        </section>
+        </div>      

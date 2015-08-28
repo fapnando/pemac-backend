@@ -3,22 +3,25 @@
     <div class="container">
         <div class="row">
         	<div class="col-md-12">
-                <h1 class="text-center"><?php echo $this->data->servico['titulo'];  ?></h1>
+                <h1 class="text-center">Sobre a PEMAC Engenharia</h1>
             </div>
         </div>
     </div>
 </div>
-<div class="section" id="servicos">
+<div class="section" id="institucional">
     <div class="container">
         <div class="row">
         	<?php 
-        		echo '
-                <div class="col-md-12">
-                    '.$this->data->servico['conteudo'].'
-                </div>
-                ';
+            	foreach($this->data->institucional as $institucional){
+            		echo '
+                    <div class="col-md-12">
+                        <p class="text-center">'.$institucional['conteudo'].'</p>
+                    </div>
+                    ';
+                }
             ?>
         </div>
     </div>
 </div>
+
 <?php $this->load->view( PUBLIC_VIEW.'layouts/footer-interna'); ?>

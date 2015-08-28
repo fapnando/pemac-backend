@@ -3,10 +3,10 @@
 
     //######################| Config |####################################
 
-    $config['module']           = 'servicos';
-    $config['module_title']     = 'Serviços';
+    $config['module']           = 'projetos';
+    $config['module_title']     = 'Projetos';
     $config['model']            = '';
-    $config['table']            = 'servicos';
+    $config['table']            = 'projetos';
         
     $config['base']             = 'padrao';
     $config['index']            = 'padrao';
@@ -35,46 +35,25 @@
     $config['campos']['titulo']['required']                   = true;
     $config['campos']['titulo']['listagem']                   = true;
 
-    $config['campos']['destacar'] = array();
-    $config['campos']['destacar']['id']                         = 'destacar';
-    $config['campos']['destacar']['type']                       = 'text';
-    $config['campos']['destacar']['hidden']                     = false;
-    $config['campos']['destacar']['txt']                        = 'Destacar na home (SIM/NAO)';
-    $config['campos']['destacar']['required']                   = true;
-    $config['campos']['destacar']['listagem']                   = true;
-
     $config['campos']['conteudo'] = array();
     $config['campos']['conteudo']['id']                       = 'conteudo';
     $config['campos']['conteudo']['type']                     = 'wys';
     $config['campos']['conteudo']['hidden']                   = false;
-    $config['campos']['conteudo']['txt']                      = 'Conteúdo';
+    $config['campos']['conteudo']['txt']                      = 'Descrição';
     $config['campos']['conteudo']['required']                 = false;
 
-    $config['campos']['id_route'] = array();
-    $config['campos']['id_route']['id']                       = 'id_route';
-    $config['campos']['id_route']['type']                     = 'rota';
-    $config['campos']['id_route']['hidden']                   = false;
-    $config['campos']['id_route']['txt']                      = 'Rota';
-    $config['campos']['id_route']['required']                 = true;
-    $config['campos']['id_route']['rota']                     = 'servicos/ver/';
-    $config['campos']['id_route']['campo']                    = 'titulo';
-    $config['campos']['id_route']['prefix']                   = false;
-    $config['campos']['id_route']['listagem']                 = true;
-
-    $config['campos']['modelo'] = array();
-    $config['campos']['modelo']['id']                         = 'modelo';
-    $config['campos']['modelo']['type']                       = 'select';
-    $config['campos']['modelo']['hidden']                     = false;
-    $config['campos']['modelo']['txt']                        = 'Select';
-    $config['campos']['modelo']['required']                   = true;
-    $config['campos']['modelo']['fk']                         = false;
-    $config['campos']['modelo']['multiple']                   = false;
-    $config['campos']['modelo']['listagem']                   = true;
-    $config['campos']['modelo']['options']                    = array();
-    $config['campos']['modelo']['options']['0']               = '-';
-    $config['campos']['modelo']['options']['1']               = 'Modelo 1';
-    $config['campos']['modelo']['options']['2']               = 'Modelo 2';
-    $config['campos']['modelo']['options']['3']               = 'Modelo 3';
+    $config['campos']['cliente'] = array();
+    $config['campos']['cliente']['id']                         = 'cliente';
+    $config['campos']['cliente']['type']                       = 'relate';
+    $config['campos']['cliente']['hidden']                     = false;
+    $config['campos']['cliente']['relate']['tabela']           = 'clientes';
+    $config['campos']['cliente']['relate']['campo']            = 'titulo';
+    $config['campos']['cliente']['txt']                        = 'Cliente';
+    $config['campos']['cliente']['required']                   = true;
+    $config['campos']['cliente']['fk']                         = false;
+    $config['campos']['cliente']['multiple']                   = false;
+    $config['campos']['cliente']['listagem']                   = true;
+    $config['campos']['cliente']['condicional']                = false;
     
     //######################| FILTROS |####################################
     
@@ -92,9 +71,8 @@
     `order` int(255) DEFAULT NULL,
     
     `titulo` 				varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
-    `conteudo`              longtext COLLATE latin1_general_ci DEFAULT NULL,
-    `id_route`              varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
-    `modelo`                varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+    `conteudo`                varchar(255) COLLATE latin1_general_ci DEFAULT NULL,
+    `cliente`                int(255) COLLATE latin1_general_ci DEFAULT NULL,
     
     PRIMARY KEY (`id`)
     ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=0;";
