@@ -14,7 +14,7 @@
 	                		echo '
 		                    <div class="col-md-4 text-center">
 		                        <h2>'.$servico['titulo'].'</h2>
-		                        <p class="text-center">'.$servico['conteudo'].'</p>
+		                        <p class="text-center">'.word_limiter($servico['conteudo'],30).'</p>
 		                        <a href="'.$servico['link'].'"><i class="fa fa-2x fa-arrow-circle-o-right text-inverse"></i></a>
 		                    </div>
 		                    ';
